@@ -1,0 +1,1 @@
+mysql -uroot -p  big_data --local-infile=1 -e 'load data local infile "/data/program/worldcitiespop.txt" into table population FIELDS TERMINATED BY ","  IGNORE 1 LINES (country,city,accent_city,region,population,latitude,longitude);'
